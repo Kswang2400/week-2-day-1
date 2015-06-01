@@ -1,11 +1,14 @@
 # Minesweeper!
 Play the classic game right in the terminal
 
+
 + Download the directory 
 + run **bundle install**
 + run **ruby minesweeper.rb** right in the terminal to play!
 
 Good Luck!
+
+https://github.com/kswang2400/ruby-curriculum/blob/master/projects/w2d1-minesweeper.md
 
 ##Screenshots
 
