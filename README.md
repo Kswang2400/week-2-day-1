@@ -16,7 +16,7 @@ Good Luck!
 ![Auto Clear](https://github.com/kswang2400/minesweeper/blob/master/minesweeper-screenshots/ms-auto-clear.png)
 
 ####Lose Screen
-![Sorry!](https://github.com/kswang2400/minesweeper/blob/master/minesweeper-screenshots/ms-lose-screen.png)
+![Sorry!](./minesweeper-screenshots/ms-lose-screen.png =100x100)
 
 ####Win Screen
-![Congrats!](https://github.com/kswang2400/minesweeper/blob/master/minesweeper-screenshots/ms-win-screen.png =100x100)
+![Congrats!](./minesweeper-screenshots/ms-win-screen.png) { width: 200px; }
