@@ -98,9 +98,9 @@ class Board
   def print_header
     puts "\n\n"
     print_two_empty_rows_red
-    puts (" " * 36).on_red + 
-      "M   I   N   E   S   W   E   E   P   E   R!".on_red.bold + 
-      (" " * 35).on_red
+    puts (" " * 35).on_red + 
+      "M   I   N   E   S   W   E   E   P   E   R  !".on_red.bold + 
+      (" " * 34).on_red
     print_two_empty_rows_red
     print_two_empty_rows
     print_column_numbers
