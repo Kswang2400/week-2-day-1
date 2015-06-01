@@ -9,6 +9,6 @@ game.play
 # Notes
 # input must be "X, Y" space and comma sensitive
 
-# try to implement cursor movement and selection for player inputs
+# try to implement cursor movement and selection (mouse clicks?) for player inputs
 # implement welcome screen like in chess
 # add flag counter in header
