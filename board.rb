@@ -68,14 +68,13 @@ class Board
   end
 
   def show_board
-    puts "\n\n"
     print_header
 
     @board_view.each_with_index do |line, i|
-      print_two_empty_rows
-      print "     ".on_red + "     #{i} ".on_blue.bold
-      print_line(line)
-      puts "     ".on_red + ((" ") * 100).on_blue + "     ".on_red
+      # print "     ".on_red + "     #{i} ".bold.on_blue
+      print_line(line, i)
+      # print "#{i} ".bold.on_blue
+      # puts "     ".on_red + ((" ") * 103) + "     ".on_red
     end
 
     print_footer
@@ -84,40 +83,48 @@ class Board
   def print_column_numbers
     print "     ".on_red + "   ".on_blue
     (0..8).each do |i|
-      print "         #{i}".on_blue.bold
+      print "         #{i}".bold.on_blue
     end
-    puts "       ".on_blue + "     ".on_red
+    puts "          ".on_blue + "     ".on_red
   end
 
   def print_footer
-    puts "     ".on_red + ((" ") * 100).on_blue + "     ".on_red
+    puts "     ".on_red + ((" ") * 103).on_blue + "     ".on_red
     print_column_numbers
     print_two_empty_rows
-    puts (" " * 110).on_red
-    puts (" " * 110).on_red
+    print_two_empty_rows_red
   end
 
   def print_header
-    puts (" " * 110).on_red
-    puts (" " * 110).on_red
-    puts (" " * 34).on_red + "M   I   N   E   S   W   E   E   P   E   R!".on_red.bold + (" " * 34).on_red
-    puts (" " * 110).on_red
-    puts (" " * 110).on_red
+    puts "\n\n"
+    print_two_empty_rows_red
+    puts (" " * 36).on_red + 
+      "M   I   N   E   S   W   E   E   P   E   R!".on_red.bold + 
+      (" " * 35).on_red
+    print_two_empty_rows_red
     print_two_empty_rows
     print_column_numbers
+    puts "     ".on_red + ((" ") * 103).on_blue + "     ".on_red
+    puts "     ".on_red + "       ".on_blue + ((" ") * 90) + "      ".on_blue + "     ".on_red
   end
 
-  def print_line(line)
-    line.each do |space|
-      print "  #{space}  ".on_blue
+  def print_line(line, i)
+    print "     ".on_red + "     #{i} ".bold.on_blue
+    line.each do |tile|
+      print "  #{tile}  "
     end
-    print "   ".on_blue
-    puts "     ".on_red
+    puts " #{i}    ".bold.on_blue + "     ".on_red
+    puts "     ".on_red + "       ".on_blue + ((" ") * 90) + "      ".on_blue + "     ".on_red
   end
 
   def print_two_empty_rows
-    puts "     ".on_red + ((" ") * 100).on_blue + "     ".on_red
-    puts "     ".on_red + ((" ") * 100).on_blue + "     ".on_red
+    puts "     ".on_red + ((" ") * 103).on_blue + "     ".on_red
+    puts "     ".on_red + ((" ") * 103).on_blue + "     ".on_red
+  end
+
+  def print_two_empty_rows_red
+    puts (" " * 113).on_red
+    puts (" " * 113).on_red
   end
 end
 

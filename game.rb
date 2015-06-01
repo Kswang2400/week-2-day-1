@@ -24,14 +24,16 @@ class Game
 
   def get_coord
     puts "\nTake your turn, input coordinate e.g. 2, 4"
-    return "win now" if gets.chomp == "win now"
-    gets.chomp.split(", ").map! { |el| el.to_i }
+    pos = gets.chomp
+    return "win now" if pos == "win now"
+    pos.split(", ").map! { |el| el.to_i }
   end
 
   def get_turn_type
     puts "\nReveal or Flag, (1) for reveal, (2) for flag"
-    return "win now" if gets.chomp == "win now"
-    Integer(gets.chomp)
+    action = gets.chomp
+    return "win now" if action == "win now"
+    Integer(action)
   end
 
   def lose?
@@ -47,9 +49,11 @@ class Game
       this_turn_position = get_coord
       type_of_turn = get_turn_type
 
-      if type_of_turn == "win now" || get_turn_type == "win now"
+      if this_turn_position == "win now" || type_of_turn == "win now"
         flag_all
-      elsif type_of_turn == 1
+      end
+
+      if type_of_turn == 1
         reveal(this_turn_position)
       elsif type_of_turn == 2
         flag(this_turn_position)
@@ -61,6 +65,7 @@ class Game
       @minefield.show_board
       puts "\n\nGood job!\n\n"
     elsif @loser
+      reveal_all_when_lose
       @minefield.show_board
       puts "\n\nNice try\n\n"
     end
@@ -79,6 +84,14 @@ class Game
       current_tile.revealed = true
       @minefield.board_view[pos[0]][pos[1]] = "  _   "
       unrevealed_neighbors(pos)
+    end
+  end
+
+  def reveal_all_when_lose
+    @minefield.board_view.each_with_index do |row, i|
+      row.each_with_index do |tile, j|
+        @minefield.board_view[i][j] = "  💣   " if @minefield.bomb_locations.include?([i, j])
+      end
     end
   end
 
