@@ -16,7 +16,7 @@ Good Luck!
 ![Auto Clear](./minesweeper-screenshots/ms-auto-clear.png)
 
 ####Lose Screen
-![Sorry!](./minesweeper-screenshots/ms-lose-screen.png =100x)
+![Sorry!]<img src=./minesweeper-screenshots/ms-lose-screen.png width=50 height=50 />
 
 ####Win Screen
 ![Congrats!](./minesweeper-screenshots/ms-win-screen.png)
