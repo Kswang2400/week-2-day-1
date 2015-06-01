@@ -10,13 +10,13 @@ Good Luck!
 ##Screenshots
 
 ####New Game!
-![New Game!](https://github.com/kswang2400/minesweeper/blob/master/minesweeper-screenshots/mw-new-game.png)
+![New Game!](./minesweeper-screenshots/ms-new-game.png)
 
 ####Auto Clearing 
-![Auto Clear](https://github.com/kswang2400/minesweeper/blob/master/minesweeper-screenshots/ms-auto-clear.png)
+![Auto Clear](./minesweeper-screenshots/ms-auto-clear.png)
 
 ####Lose Screen
-![Sorry!](./minesweeper-screenshots/ms-lose-screen.png =100x100)
+![Sorry!](./minesweeper-screenshots/ms-lose-screen.png =100x)
 
 ####Win Screen
-![Congrats!](./minesweeper-screenshots/ms-win-screen.png) { width: 200px; }
+![Congrats!](./minesweeper-screenshots/ms-win-screen.png)
