@@ -10,13 +10,17 @@ Good Luck!
 ##Screenshots
 
 ####New Game!
-![New Game!]<img src=./minesweeper-screenshots/ms-new-game.png width=450 height=350 />
+<img src=./minesweeper-screenshots/ms-new-game.png 
+  align=middle width=500 height=400 />
 
 ####Auto Clearing 
-![Auto Clear]<img src=./minesweeper-screenshots/ms-auto-clear.png width=450 heigth=350 />
+<img src=./minesweeper-screenshots/ms-auto-clear.png 
+  align=middle width=500 heigth=400 />
 
 ####Lose Screen
-![Sorry!]<img src=./minesweeper-screenshots/ms-lose-screen.png width=450 height=350 />
+<img src=./minesweeper-screenshots/ms-lose-screen.png
+  align=middle width=500 height=400 />
 
 ####Win Screen
-![Congrats!]<img src=./minesweeper-screenshots/ms-win-screen.png width=450 height=350 />
+<img src=./minesweeper-screenshots/ms-win-screen.png
+  align=middle width=500 height=400 />
