@@ -19,4 +19,4 @@ Good Luck!
 ![Sorry!](https://github.com/kswang2400/minesweeper/blob/master/minesweeper-screenshots/ms-lose-screen.png)
 
 ####Win Screen
-![Congrats!](https://github.com/kswang2400/minesweeper/blob/master/minesweeper-screenshots/ms-win-screen.png)
+![Congrats!](https://github.com/kswang2400/minesweeper/blob/master/minesweeper-screenshots/ms-win-screen.png =100x100)
